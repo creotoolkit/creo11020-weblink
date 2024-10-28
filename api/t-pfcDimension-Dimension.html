@@ -1,0 +1,169 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcDimension"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDimension.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDimension-Dimension.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDimension</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a dimension.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcDimension-BaseDimension.html">pfcBaseDimension</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcDimension-DimTolerance.html">pfcDimTolerance</a></tt></td><td class="func-signature"><tt><a class="method" href="#Tolerance">Tolerance</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The dimension tolerance</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsReference">IsReference</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Tolerance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcDimension-DimTolerance.html">pfcDimTolerance</a></tt></td><td class="func-name"><tt>Tolerance</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The dimension tolerance<br>
+<br> A null value specifies a nominal tolerance. 
+   <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - This means either: 
+    <ul>
+       
+<li>There was no tolerance label, OR</li>
+       
+<li>There was no corresponding tolerance table.</li>
+    
+</ul>
+    
+</p>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - This means either: 
+    <ul>
+       
+<li>The model is not in the ISO/DIN standard, OR</li>
+       
+<li>The input dimension is reference, OR</li>
+       
+<li>The dimension has no tolerance (a driven dim) or the model is not in the ISO/DIN standard.</li>
+    
+</ul>
+    
+</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - The model is locked and cannot be modified.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - The table was valid but could not be accessed because it had not yet been loaded. </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="IsReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsReference</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

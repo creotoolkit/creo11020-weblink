@@ -1,0 +1,260 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcUnitSystem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUnits.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUnits-UnitSystem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcUnitSystem</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a particular unit system in the model.<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Child.html">pfcChild</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsStandard">IsStandard</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies whether the unit system is system-defined (value
+<tt>true</tt>) or user-defined (value <tt>false</tt>).</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-signature"><tt><a class="method" href="#Name">Name</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the name of the unit system</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-UnitSystemType.html">pfcUnitSystemType</a></tt></td><td class="func-signature"><tt><a class="method" href="#Type">Type</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the type of the unit system.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Delete the unit system</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetUnit">GetUnit</a>
+ (<a class="type" href="t-pfcBase-UnitType.html">pfcUnitType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the unit used by the unit system for a particular
+type.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="IsStandard">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsStandard</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies whether the unit system is system-defined (value
+<tt>true</tt>) or user-defined (value <tt>false</tt>).<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-name"><tt>Name</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the name of the unit system<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - The unit system cannot be modified because if is standard, or new_name already exists, or the model cannot be modified. </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Type">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-UnitSystemType.html">pfcUnitSystemType</a></tt></td><td class="func-name"><tt>Type</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the type of the unit system.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Delete the unit system<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - The unit system cannot be modified because if is standard, or is the principal system, or the model cannot be modified. </p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetUnit">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a></tt></td><td class="func-name"><tt>GetUnit</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-UnitType.html">pfcUnitType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the unit used by the unit system for a particular
+type.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - system does not contain a unit of the requested type. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of unit.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The unit.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcBaseParameter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelItem.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelItem-BaseParameter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcBaseParameter</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Describes the base parameter, which can be a Creo Parametric parameter or dimension.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Object.html">pfcObject</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModelItem-Parameter.html">pfcParameter</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDimension-BaseDimension.html">pfcBaseDimension</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsDesignated">IsDesignated</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If this is <tt>true</tt>, the parameter is designated for use with Windchill.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsModified">IsModified</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If this is <tt>true</tt>, the parameter is modified. A parameter is said to be "modified" when it has been changed, but the parameter's owner has not yet been regenerated. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsRelationDriven">IsRelationDriven</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Identifies if the dimension or parameter is relation driven.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a></tt></td><td class="func-signature"><tt><a class="method" href="#Value">Value</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The value of the parameter.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ResetFromBackup">ResetFromBackup</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Resets the parameter to the value it had before it was
+last set in the current Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="IsDesignated">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsDesignated</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If this is <tt>true</tt>, the parameter is designated for use with Windchill.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The specified parameter already exists.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified parameter was not found.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsModified">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsModified</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If this is <tt>true</tt>, the parameter is modified. A parameter is said to be "modified" when it has been changed, but the parameter's owner has not yet been regenerated. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsRelationDriven">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsRelationDriven</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Identifies if the dimension or parameter is relation driven.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Value">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a></tt></td><td class="func-name"><tt>Value</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The value of the parameter.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The input dimension is reference.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="ResetFromBackup">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ResetFromBackup</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Resets the parameter to the value it had before it was
+last set in the current Creo Parametric.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

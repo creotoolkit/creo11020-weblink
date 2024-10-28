@@ -1,0 +1,1011 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcFeature"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcFeature.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcFeature-Feature.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcFeature</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines a feature.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSolid-Solid.html#GetFeatureById">pfcSolid.GetFeatureById()</a></b></tt>, <tt><b><a class="method" href="t-pfcSolid-Solid.html#GetFeatureByName">pfcSolid.GetFeatureByName()</a></b></tt>, <tt><b><a class="method" href="t-pfcSolid-Solid.html#ListFeaturesByType">pfcSolid.ListFeaturesByType()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcComponentFeat-ComponentFeat.html">pfcComponentFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDatumAxisFeat-DatumAxisFeat.html">pfcDatumAxisFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcCurveFeat-CurveFeat.html">pfcCurveFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcCoordSysFeat-CoordSysFeat.html">pfcCoordSysFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDatumPlaneFeat-DatumPlaneFeat.html">pfcDatumPlaneFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcRoundFeat-RoundFeat.html">pfcRoundFeat</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDatumPointFeat-DatumPointFeat.html">pfcDatumPointFeat</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#FeatSubType">FeatSubType</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The feature subtype, i.e. "Extrude" or "Revolve" for a protrusion.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureType.html">pfcFeatureType</a></tt></td><td class="func-signature"><tt><a class="method" href="#FeatType">FeatType</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The feature type.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#FeatTypeName">FeatTypeName</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The feature type expressed as a string.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureGroup.html">pfcFeatureGroup</a></tt></td><td class="func-signature"><tt><a class="method" href="#Group">Group</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The group, if the feature is a member of a group.  Otherwise this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureGroup.html">pfcFeatureGroup</a></tt></td><td class="func-signature"><tt><a class="method" href="#GroupDirectHeader">GroupDirectHeader</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupPattern.html">pfcGroupPattern</a></tt></td><td class="func-signature"><tt><a class="method" href="#GroupPattern">GroupPattern</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The group pattern, if the feature is a member of a group pattern.  Otherwise this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupPatternStatus.html">pfcGroupPatternStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#GroupPatternStatus">GroupPatternStatus</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The group pattern status.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupStatus.html">pfcGroupStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#GroupStatus">GroupStatus</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The group status.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsEmbedded">IsEmbedded</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A Boolean flag that specifies whether the feature 
+   is an embedded datum or not.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsGroupMember">IsGroupMember</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the group status of the specified feature.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsReadonly">IsReadonly</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A Boolean flag that specifies whether the feature is read only</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsVisible">IsVisible</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A Boolean flag that specifies whether the feature is visible.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#Number">Number</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The regeneration number of the feature.  If the feature is suppressed or unregenerated, this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeaturePattern.html">pfcFeaturePattern</a></tt></td><td class="func-signature"><tt><a class="method" href="#Pattern">Pattern</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The pattern, if the feature is a member of a pattern.  Otherwise this will be <tt>null</tt>. This function should only be used for simple patttern and use GetPatternByType function for nested pattern.
+    </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-PatternStatus.html">pfcPatternStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#PatternStatus">PatternStatus</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The pattern status.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureStatus.html">pfcFeatureStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#Status">Status</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The feature status.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#VersionStamp">VersionStamp</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The version stamp</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-DeleteOperation.html">pfcDeleteOperation</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateDeleteOp">CreateDeleteOp</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a feature delete operation.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ReorderAfterOperation.html">pfcReorderAfterOperation</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateReorderAfterOp">CreateReorderAfterOp</a>
+ (<a class="type" href="t-pfcFeature-Feature.html">pfcFeature</a>&nbsp;AfterFeat)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an operation that will reorder the features after the specified feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ReorderBeforeOperation.html">pfcReorderBeforeOperation</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateReorderBeforeOp">CreateReorderBeforeOp</a>
+ (<a class="type" href="t-pfcFeature-Feature.html">pfcFeature</a>&nbsp;BeforeFeat)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an operation that will reorder the features before the specified feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ResumeOperation.html">pfcResumeOperation</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateResumeOp">CreateResumeOp</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new resume operation object.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-SuppressOperation.html">pfcSuppressOperation</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateSuppressOp">CreateSuppressOp</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new suppress operation object.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeaturePattern.html">pfcFeaturePattern</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetPatternByType">GetPatternByType</a>
+ (<a class="type" href="t-pfcFeature-PatternType.html">pfcPatternType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Features.html">pfcFeatures</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListChildren">ListChildren</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists the children of the feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Features.html">pfcFeatures</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListParents">ListParents</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists the parents of the feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListSubItems">ListSubItems</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists the component model items that make up the feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="FeatSubType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>FeatSubType</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The feature subtype, i.e. "Extrude" or "Revolve" for a protrusion.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FeatType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureType.html">pfcFeatureType</a></tt></td><td class="func-name"><tt>FeatType</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The feature type.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FeatTypeName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>FeatTypeName</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The feature type expressed as a string.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Group">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureGroup.html">pfcFeatureGroup</a></tt></td><td class="func-name"><tt>Group</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The group, if the feature is a member of a group.  Otherwise this will be <tt>null</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GroupDirectHeader">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureGroup.html">pfcFeatureGroup</a></tt></td><td class="func-name"><tt>GroupDirectHeader</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp;<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GroupPattern">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupPattern.html">pfcGroupPattern</a></tt></td><td class="func-name"><tt>GroupPattern</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The group pattern, if the feature is a member of a group pattern.  Otherwise this will be <tt>null</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GroupPatternStatus">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupPatternStatus.html">pfcGroupPatternStatus</a></tt></td><td class="func-name"><tt>GroupPatternStatus</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The group pattern status.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GroupStatus">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-GroupStatus.html">pfcGroupStatus</a></tt></td><td class="func-name"><tt>GroupStatus</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The group status.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsEmbedded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsEmbedded</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A Boolean flag that specifies whether the feature 
+   is an embedded datum or not.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsGroupMember">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsGroupMember</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the group status of the specified feature.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsReadonly">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsReadonly</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A Boolean flag that specifies whether the feature is read only<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsVisible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;boolean</tt></td><td class="func-name"><tt>IsVisible</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A Boolean flag that specifies whether the feature is visible.<br>
+<br>This flag distinguishes visible features from internal features. 
+    Internal features are invisible features used for construction purposes.
+    <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Number">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>Number</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The regeneration number of the feature.  If the feature is suppressed or unregenerated, this will be <tt>null</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Pattern">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeaturePattern.html">pfcFeaturePattern</a></tt></td><td class="func-name"><tt>Pattern</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The pattern, if the feature is a member of a pattern.  Otherwise this will be <tt>null</tt>. This function should only be used for simple patttern and use GetPatternByType function for nested pattern.
+    <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="PatternStatus">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-PatternStatus.html">pfcPatternStatus</a></tt></td><td class="func-name"><tt>PatternStatus</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The pattern status.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Status">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeatureStatus.html">pfcFeatureStatus</a></tt></td><td class="func-name"><tt>Status</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The feature status.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VersionStamp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>VersionStamp</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The version stamp<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CreateDeleteOp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-DeleteOperation.html">pfcDeleteOperation</a></tt></td><td class="func-name"><tt>CreateDeleteOp</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a feature delete operation.
+<br>
+<br>The return value must be passed as a member of a <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-FeatureOperations.html">pfcFeatureOperations</a></b></tt></b></tt> sequence to the method <tt><b><a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps">pfcSolid.ExecuteFeatureOps()</a></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The deletion operation</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateReorderAfterOp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ReorderAfterOperation.html">pfcReorderAfterOperation</a></tt></td><td class="func-name"><tt>CreateReorderAfterOp</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcFeature-Feature.html">pfcFeature</a>&nbsp;AfterFeat)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an operation that will reorder the features after the specified feature.
+<br>
+<br>The return value must be passed as a member of a <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-FeatureOperations.html">pfcFeatureOperations</a></b></tt></b></tt> sequence to the method <tt><b><a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps">pfcSolid.ExecuteFeatureOps()</a></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AfterFeat</b></tt>
+</dt>
+<dd>The feature after which you want to reorder the features</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ReorderAfterOperation</i> object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateReorderBeforeOp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ReorderBeforeOperation.html">pfcReorderBeforeOperation</a></tt></td><td class="func-name"><tt>CreateReorderBeforeOp</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcFeature-Feature.html">pfcFeature</a>&nbsp;BeforeFeat)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an operation that will reorder the features before the specified feature.
+<br>
+<br>The return value must be passed as a member of a <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-FeatureOperations.html">pfcFeatureOperations</a></b></tt></b></tt> sequence to the method <tt><b><a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps">pfcSolid.ExecuteFeatureOps()</a></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>BeforeFeat</b></tt>
+</dt>
+<dd>The feature before which you want to reorder the features</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ReorderBeforeOperation</i> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateResumeOp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-ResumeOperation.html">pfcResumeOperation</a></tt></td><td class="func-name"><tt>CreateResumeOp</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new resume operation object.
+<br>
+<br>The return value must be passed as a member of a <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-FeatureOperations.html">pfcFeatureOperations</a></b></tt></b></tt> sequence to the method <tt><b><a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps">pfcSolid.ExecuteFeatureOps()</a></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new resume operation object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateSuppressOp">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-SuppressOperation.html">pfcSuppressOperation</a></tt></td><td class="func-name"><tt>CreateSuppressOp</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new suppress operation object.
+<br>
+<br>The return value must be passed as a member of a <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-FeatureOperations.html">pfcFeatureOperations</a></b></tt></b></tt> sequence to the method <tt><b><a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps">pfcSolid.ExecuteFeatureOps()</a></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new suppress operation object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetPatternByType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcFeature-FeaturePattern.html">pfcFeaturePattern</a></tt></td><td class="func-name"><tt>GetPatternByType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcFeature-PatternType.html">pfcPatternType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListChildren">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Features.html">pfcFeatures</a></tt></td><td class="func-name"><tt>ListChildren</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists the children of the feature.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of first-generation children features.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListParents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Features.html">pfcFeatures</a></tt></td><td class="func-name"><tt>ListParents</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists the parents of the feature.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of first-generation parents features.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListSubItems">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems</a></tt></td><td class="func-name"><tt>ListSubItems</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists the component model items that make up the feature.
+<br>
+<br>
+      Following are the subitems that can get listed with this method: 
+      ITEM_SURFACE, ITEM_EDGE, ITEM_QUILT, ITEM_CURVE, ITEM_POINT, ITEM_AXIS, ITEM_COORD_SYS and ITEM_DIMENSION.
+    <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of subitem you want to find </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of subitems of the specified type </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcSelectionBuffer"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSelect.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSelect-SelectionBuffer.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcSelectionBuffer</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class represents a selection buffer, where items preselected by the user are stored to be used by tools and popupmenus.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Child.html">pfcChild</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections</a></tt></td><td class="func-signature"><tt><a class="method" href="#Contents">Contents</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Contents of the active selection buffer.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddSelection">AddSelection</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;ToAdd)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Add an item to the selection buffer.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Clear">Clear</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Clear the selection buffer of all contents. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveSelection">RemoveSelection</a>
+ (number&nbsp;IndexToRemove)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes the selection at the indicated location from the selection tool. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Contents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections</a></tt></td><td class="func-name"><tt>Contents</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Contents of the active selection buffer.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - There is no Object/Action selection tool active. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - There are no objects in the current selection tool. </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="AddSelection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddSelection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;ToAdd)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Add an item to the selection buffer.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - There is no Object/Action selection tool active.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - The selection does not correctly reference the current model. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - The item is not currently displayed and so cannot be added to the buffer. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The selection cannot be added to the buffer in combination with one or more objects that are already in the buffer (e.g. geometry and features selected at the same time). </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Buffer modification is prohibited. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ToAdd</b></tt>
+</dt>
+<dd>Selection to be added to the buffer.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Clear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Clear</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Clear the selection buffer of all contents. 
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - There is no Object/Action selection tool active.</p>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Buffer modification is prohibited. </p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RemoveSelection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RemoveSelection</tt></td><td class="func-params"><tt>
+ (number&nbsp;IndexToRemove)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes the selection at the indicated location from the selection tool. 
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - There is no Object/Action selection tool active. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Buffer modification is prohibited. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IndexToRemove</b></tt>
+</dt>
+<dd>Index of the item to remove from the currently active selection tool.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

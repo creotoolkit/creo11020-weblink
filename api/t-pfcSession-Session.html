@@ -1,0 +1,1439 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcSession"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSession.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSession-Session.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcSession</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The Creo Parametric session.
+  <br>
+<br>To each application, Creo assigns a unique session, which contains
+    the application licensing information, its <tt><b><tt><b><a class="enumtype" href="t-pfcSession-CreoCompatibility.html">pfcCreoCompatibility</a></b></tt></b></tt>
+    and other data. The application can obtain
+    this session by calling <tt><b><tt><b><a class="func" href="t-pfcSession-MpfcSession.html#GetCurrentSession">MpfcSession.GetCurrentSession()</a></b></tt></b></tt>.
+    However, when assigning the session, Creo sets its compatibility (in associated
+    <tt><b><tt><b><a class="enumtype" href="t-pfcSession-AppInfo.html">pfcAppInfo</a></b></tt></b></tt>) to
+    <tt><b><a class="enumtype" href="t-pfcSession-CreoCompatibility.html">CompatibilityUndefined</a></b></tt>.
+    This makes setting the compatibility be the responsibility of the application.
+    To do this, <b>when obtaining the assigned session the first time,
+    the application must call <tt><b><tt><b><a class="func" href="t-pfcSession-MpfcSession.html#GetCurrentSessionWithCompatibility">MpfcSession.GetCurrentSessionWithCompatibility()</a></b></tt></b></tt>
+    and pass a specific Creo compatibility to it</b>. Otherwise, calls
+    to <tt><b><tt><b><a class="func" href="t-pfcSession-MpfcSession.html#GetCurrentSession">MpfcSession.GetCurrentSession()</a></b></tt></b></tt> will be throwing <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCompatibilityNotSet.html">pfcXCompatibilityNotSet</a></b></tt></b></tt>.
+    Setting the comatiblity can be done
+    only once during the runtime, although doing this always is a save approach
+    to avoid the exception. For instance, if a Java toolkit application has more than one
+    starting method, each such method must set
+    the compatibility when obtaining the assigned session the first time.
+
+    <p></p>Another function to obtain the assigned session is
+    <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcGlobal::GetProESession&gt;
+  </b></tt></b></tt>. It does not throw exceptions,
+    but if it is used as the first call to obtain the session, then it sets the compatibility to
+    <tt><b><a class="enumtype" href="t-pfcSession-CreoCompatibility.html">C3Compatible</a></b></tt>.
+    This is done to provide the forward compatibility for applications
+    based on earlier versions of Creo. This behavior can be changed by calling first
+    <tt><b><tt><b><a class="func" href="t-pfcSession-MpfcSession.html#GetCurrentSessionWithCompatibility">MpfcSession.GetCurrentSessionWithCompatibility()</a></b></tt></b></tt> with compatibility
+    passed as desired. Then all subsequent calls to
+    <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcGlobal::GetProESession&gt;
+  </b></tt></b></tt> will return the
+    session with same compatibility. Such behavior facilitates
+    the migration of pre-Creo4 applications: it is enough
+    to replace only the first call to
+    <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcGlobal::GetProESession&gt;
+  </b></tt></b></tt> with
+    <tt><b><tt><b><a class="func" href="t-pfcSession-MpfcSession.html#GetCurrentSessionWithCompatibility">MpfcSession.GetCurrentSessionWithCompatibility()</a></b></tt></b></tt>(<tt><b><a class="enumtype" href="t-pfcSession-CreoCompatibility.html">C4Compatible</a></b></tt>),
+    while leaving all subsequent calls to
+    <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcGlobal::GetProESession&gt;
+  </b></tt></b></tt> without a change.
+
+    <p></p>Please note that <b>using
+    <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcGlobal::GetProESession&gt;
+  </b></tt></b></tt>is deprecated</b>.
+    In subsequent releases it will result in an exception.
+  <br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcSession-BaseSession.html">pfcBaseSession</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-SelectionBuffer.html">pfcSelectionBuffer</a></tt></td><td class="func-signature"><tt><a class="method" href="#CurrentSelectionBuffer">CurrentSelectionBuffer</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The current selection buffer object.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-AppInfo.html">pfcAppInfo</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAppInfo">GetAppInfo</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the application information from the applicatoin session.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#ModelDescrContainsOrigin">ModelDescrContainsOrigin</a>
+ (<a class="type" href="t-pfcModel-ModelDescriptor.html">pfcModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#NavigatorPaneBrowserAdd">NavigatorPaneBrowserAdd</a>
+ (string&nbsp;PaneName, 
+   /*&nbsp;optional&nbsp;*/&nbsp;string&nbsp;IconFileName, string&nbsp;URL)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Adds a new Navigator Pane.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#NavigatorPaneBrowserIconSet">NavigatorPaneBrowserIconSet</a>
+ (string&nbsp;PaneName, string&nbsp;IconFileName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Set the icon for a Navigator Pane.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#NavigatorPaneBrowserURLSet">NavigatorPaneBrowserURLSet</a>
+ (string&nbsp;PaneName, string&nbsp;URL)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Set the url for a Navigator Pane.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RibbonDefinitionfileLoad">RibbonDefinitionfileLoad</a>
+ (string&nbsp;FileName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Loads ribbon definition file from a default path.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAppInfo">SetAppInfo</a>
+ (<a class="type" href="t-pfcSession-AppInfo.html">pfcAppInfo</a>&nbsp;Info)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sends the application information for the application session.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UIClearMessage">UIClearMessage</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Scrolls the text in the message area up one line after a call to <tt><b><a class="method" href="t-pfcSession-Session.html#UIDisplayMessage">pfcSession.UIDisplayMessage()</a></b></tt> . This command produces only one carriage return; if called multiple times, the command is ignored.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UIDisplayFeatureParams">UIDisplayFeatureParams</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;Selection, <a class="type" href="t-pfcSession-ParamType.html">pfcParamType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Displays parameters of a selected feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UIDisplayLocalizedMessage">UIDisplayLocalizedMessage</a>
+ (string&nbsp;MsgFile, string&nbsp;Format, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Prints a text message to the message area in Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UIDisplayMessage">UIDisplayMessage</a>
+ (string&nbsp;MsgFile, string&nbsp;Format, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Prints a text message to the message area in Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcCommand-UICommand.html">pfcUICommand</a></tt></td><td class="func-signature"><tt><a class="method" href="#UIGetCommand">UIGetCommand</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Finds the identifier of the specified action or option.
+ </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-MouseStatus.html">pfcMouseStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#UIGetCurrentMouseStatus">UIGetCurrentMouseStatus</a>
+ (boolean&nbsp;SnapToGrid)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the status of mouse at this particular moment.  This method returns whenever the mouse is
+moved or a button is pressed.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-MouseStatus.html">pfcMouseStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#UIGetNextMousePick">UIGetNextMousePick</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSession-MouseButton.html">pfcMouseButton</a>&nbsp;ExpectedButton)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the mouse status at the time that the user makes a mouse pick.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-signature"><tt><a class="method" href="#UIOpenFile">UIOpenFile</a>
+ (<a class="type" href="t-pfcUI-FileOpenOptions.html">pfcFileOpenOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Prompts the standard file browser interface of Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Outline3D.html">pfcOutline3D</a></tt></td><td class="func-signature"><tt><a class="method" href="#UIPickMouseBox">UIPickMouseBox</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a>&nbsp;FirstCorner)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Prompt the user to select a rectangle using the mouse.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#UIReadIntMessage">UIReadIntMessage</a>
+ (number&nbsp;LowerLimit, number&nbsp;UpperLimit)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Reads an integer from the keyboard.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#UIReadRealMessage">UIReadRealMessage</a>
+ (number&nbsp;LowerLimit, number&nbsp;UpperLimit)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Reads a double-precision float from the keyboard.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#UIReadStringMessage">UIReadStringMessage</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;boolean&nbsp;HideInput)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Reads a line of keyboard input and returns the contents as a wide
+string.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-signature"><tt><a class="method" href="#UISaveFile">UISaveFile</a>
+ (<a class="type" href="t-pfcUI-FileSaveOptions.html">pfcFileSaveOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to save a file.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-signature"><tt><a class="method" href="#UISelectDirectory">UISelectDirectory</a>
+ (<a class="type" href="t-pfcUI-DirectorySelectionOptions.html">pfcDirectorySelectionOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to select a directory.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcUI-MessageButton.html">pfcMessageButton</a></tt></td><td class="func-signature"><tt><a class="method" href="#UIShowMessageDialog">UIShowMessageDialog</a>
+ (string&nbsp;Message, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUI-MessageDialogOptions.html">pfcMessageDialogOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Displays the UI Message Dialog.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="CurrentSelectionBuffer">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-SelectionBuffer.html">pfcSelectionBuffer</a></tt></td><td class="func-name"><tt>CurrentSelectionBuffer</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The current selection buffer object.<br>
+<br>It is necessary to have a model active in the session before calling the Get
+   method for the above attribute.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="GetAppInfo">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-AppInfo.html">pfcAppInfo</a></tt></td><td class="func-name"><tt>GetAppInfo</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the application information from the applicatoin session.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ModelDescrContainsOrigin">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>ModelDescrContainsOrigin</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-ModelDescriptor.html">pfcModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="NavigatorPaneBrowserAdd">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>NavigatorPaneBrowserAdd</tt></td><td class="func-params"><tt>
+ (string&nbsp;PaneName, 
+   /*&nbsp;optional&nbsp;*/&nbsp;string&nbsp;IconFileName, string&nbsp;URL)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Adds a new Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>IconFileName</b></tt>
+</dt>
+<dd>The name of the icon file</dd>
+<dt>
+<tt><b>URL</b></tt>
+</dt>
+<dd>URL of the pane</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="NavigatorPaneBrowserIconSet">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>NavigatorPaneBrowserIconSet</tt></td><td class="func-params"><tt>
+ (string&nbsp;PaneName, string&nbsp;IconFileName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Set the icon for a Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>IconFileName</b></tt>
+</dt>
+<dd>The name of the icon file</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="NavigatorPaneBrowserURLSet">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>NavigatorPaneBrowserURLSet</tt></td><td class="func-params"><tt>
+ (string&nbsp;PaneName, string&nbsp;URL)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Set the url for a Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>URL</b></tt>
+</dt>
+<dd>URL to set in the pane</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RibbonDefinitionfileLoad">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RibbonDefinitionfileLoad</tt></td><td class="func-params"><tt>
+ (string&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Loads ribbon definition file from a default path.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The ribbon definition file was not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidFile.html">pfcXToolkitInvalidFile</a></b></tt></b></tt> - The file specified was not a ribbon definition file.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>Name of ribbon definition file including extension name. The default search paths for finding the ribbon definition file are: <ul type="disc">
+
+<li> Current directory</li>
+
+<li> Creo Parametric Loadpoint/text/ribbon</li>
+
+<li> Application text dir/ribbon</li>
+
+<li> Application text dir/(language)/ribbon</li>
+
+</ul>
+ 
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAppInfo">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAppInfo</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSession-AppInfo.html">pfcAppInfo</a>&nbsp;Info)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sends the application information for the application session.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Info</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIClearMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UIClearMessage</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Scrolls the text in the message area up one line after a call to <tt><b><a class="method" href="t-pfcSession-Session.html#UIDisplayMessage">pfcSession.UIDisplayMessage()</a></b></tt> . This command produces only one carriage return; if called multiple times, the command is ignored.
+<br>
+<br>You could use this function to remove a message once the user has
+responded to it, so it is clear that the system received the response.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIDisplayFeatureParams">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UIDisplayFeatureParams</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;Selection, <a class="type" href="t-pfcSession-ParamType.html">pfcParamType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Displays parameters of a selected feature.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The model is not the top-level model in the window. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selection</b></tt>
+</dt>
+<dd>A selection object in which the selected model item is a feature.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>Specifies the type of parameter to display. The options are:<ul type="disc">
+
+<li>
+ DIM_PARAM</li>
+
+<li>
+ PATTERN_PARAM</li>
+
+<li>
+ REFDIM_PARAM</li>
+
+<li>
+ ALL_PARAMS</li>
+
+<li>
+ GTOL_PARAM</li>
+
+<li>
+ SURFFIN_PARAM</li>
+
+</ul>
+
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIDisplayLocalizedMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UIDisplayLocalizedMessage</tt></td><td class="func-params"><tt>
+ (string&nbsp;MsgFile, string&nbsp;Format, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Prints a text message to the message area in Creo Parametric.
+<br>
+<br>This method supports non-ASCII character strings as messages.
+Remember that Web.Link applications, as unregistered web pages, do not currently support setting of the PTC Creo Parametric text directory.
+All the resource files for messages must be located at $PRO_DIRECTORY/text folder.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified message file was not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantOpen.html">pfcXToolkitCantOpen</a></b></tt></b></tt> - The system could not read the message file.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgNotFound.html">pfcXToolkitMsgNotFound</a></b></tt></b></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgNoTrans.html">pfcXToolkitMsgNoTrans</a></b></tt></b></tt> - The message text (in the current language of the user interface) was not found. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgFmtError.html">pfcXToolkitMsgFmtError</a></b></tt></b></tt> - There was a format error in the message text.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgTooLong.html">pfcXToolkitMsgTooLong</a></b></tt></b></tt> - The message was longer than 259 characters and has been truncated to fit. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The message file had been read in before this call and the message was not in it. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MsgFile</b></tt>
+</dt>
+<dd>The name of the message file containing the format</dd>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd>The format of the message: the first line of the section of the message file that uniquely identifies the message</dd>
+<dt>
+<tt><b>Messages</b></tt>
+</dt>
+<dd>A sequence of strings which will replace any occurrences of %#w in the message file, where '#' is the numerical identifier of the replacement.  This method does not support formats using %#s.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIDisplayMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UIDisplayMessage</tt></td><td class="func-params"><tt>
+ (string&nbsp;MsgFile, string&nbsp;Format, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Prints a text message to the message area in Creo Parametric.
+<br>
+<br>This method supports only ASCII character strings as messages.
+Remember that Web.Link applications, as unregistered web pages, do not currently support setting of the PTC Creo Parametric text directory.
+All the resource files for messages must be located at $PRO_DIRECTORY/text folder.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified message file was not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantOpen.html">pfcXToolkitCantOpen</a></b></tt></b></tt> - The system could not read the message file.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgNotFound.html">pfcXToolkitMsgNotFound</a></b></tt></b></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgNoTrans.html">pfcXToolkitMsgNoTrans</a></b></tt></b></tt> - The message text (in the current language of the user interface) was not found. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgFmtError.html">pfcXToolkitMsgFmtError</a></b></tt></b></tt> - There was a format error in the message text.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgTooLong.html">pfcXToolkitMsgTooLong</a></b></tt></b></tt> - The message was longer than 80 characters and has been truncated to fit. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The message file had been read in before this call and the message was not in it. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MsgFile</b></tt>
+</dt>
+<dd>The name of the message file containing the format</dd>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd>The format of the message: the first line of the section of the message file that uniquely identifies the message</dd>
+<dt>
+<tt><b>Messages</b></tt>
+</dt>
+<dd>A sequence of strings which will replace any occurrences of %#s in the message format, where '#' is the numerical identifier of the replacement.  This method does not support formats using %#w.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIGetCommand">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcCommand-UICommand.html">pfcUICommand</a></tt></td><td class="func-name"><tt>UIGetCommand</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Finds the identifier of the specified action or option.
+ <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the action or option.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the command.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIGetCurrentMouseStatus">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-MouseStatus.html">pfcMouseStatus</a></tt></td><td class="func-name"><tt>UIGetCurrentMouseStatus</tt></td><td class="func-params"><tt>
+ (boolean&nbsp;SnapToGrid)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the status of mouse at this particular moment.  This method returns whenever the mouse is
+moved or a button is pressed.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt> - The user aborted input. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SnapToGrid</b></tt>
+</dt>
+<dd>Boolean specifying whether or not the mouse positions should be indicated as the closest gridpoint.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Data object with the current mouse position and button status.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIGetNextMousePick">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSession-MouseStatus.html">pfcMouseStatus</a></tt></td><td class="func-name"><tt>UIGetNextMousePick</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSession-MouseButton.html">pfcMouseButton</a>&nbsp;ExpectedButton)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the mouse status at the time that the user makes a mouse pick.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExpectedButton</b></tt>
+</dt>
+<dd>The button that the user should press, or <tt>null</tt>, which means any button will cause the function to return.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Data object containing the current mouse position and button status.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIOpenFile">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-name"><tt>UIOpenFile</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcUI-FileOpenOptions.html">pfcFileOpenOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Prompts the standard file browser interface of Creo Parametric.
+<br>
+<br>This method cannot be used for NX models in the current release.
+ <p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUserAbort.html">pfcXToolkitUserAbort</a></b></tt></b></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for file open dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIPickMouseBox">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Outline3D.html">pfcOutline3D</a></tt></td><td class="func-name"><tt>UIPickMouseBox</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a>&nbsp;FirstCorner)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Prompt the user to select a rectangle using the mouse.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FirstCorner</b></tt>
+</dt>
+<dd>The location of the first corner of the rectangle, or <tt>null</tt>, in which case the user willbe able to select both corners.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The two boundary points, in screen coordinates.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIReadIntMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>UIReadIntMessage</tt></td><td class="func-params"><tt>
+ (number&nbsp;LowerLimit, number&nbsp;UpperLimit)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Reads an integer from the keyboard.
+<br>
+<br>If the user types a value outside the specified range of values, the
+functions prompts the user to enter the value again.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgUserQuit.html">pfcXToolkitMsgUserQuit</a></b></tt></b></tt> - The user canceled input by typing ESC.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LowerLimit</b></tt>
+</dt>
+<dd>The lower limit of the range of valid values</dd>
+<dt>
+<tt><b>UpperLimit</b></tt>
+</dt>
+<dd>The upper limit of the range of valid values</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the value entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIReadRealMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>UIReadRealMessage</tt></td><td class="func-params"><tt>
+ (number&nbsp;LowerLimit, number&nbsp;UpperLimit)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Reads a double-precision float from the keyboard.
+<br>
+<br>If the user types a value outside the specified range of values,
+the function prompts the user to enter the value again.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgUserQuit.html">pfcXToolkitMsgUserQuit</a></b></tt></b></tt> - The user canceled input by typing ESC.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LowerLimit</b></tt>
+</dt>
+<dd>The lower limit of the range of valid values</dd>
+<dt>
+<tt><b>UpperLimit</b></tt>
+</dt>
+<dd>The upper limit of the range of valid values </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the value entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIReadStringMessage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>UIReadStringMessage</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;boolean&nbsp;HideInput)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Reads a line of keyboard input and returns the contents as a wide
+string.
+<br>
+<br>Leading and trailing blanks are stripped from the string.
+   <p></p>
+   Default values are displayed in the text box as input.
+   Note that this value will not be returned if the user hits a carriage return;
+   instead, the function will return constant string "use_default_string" and
+   the application must interpret that the user intends to use the default.
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgUserQuit.html">pfcXToolkitMsgUserQuit</a></b></tt></b></tt> - The user canceled input by typing &lt;ESC&gt;.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>HideInput</b></tt>
+</dt>
+<dd>A Boolean flag that specifies whether the input should be hidden, such as when you type in a password</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The string entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UISaveFile">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-name"><tt>UISaveFile</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcUI-FileSaveOptions.html">pfcFileSaveOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to save a file.
+<br>
+<br>For Multi-CAD objects, this method does not support local disk saving
+  location in a Windchill connected session.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUserAbort.html">pfcXToolkitUserAbort</a></b></tt></b></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for save file dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The saved file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UISelectDirectory">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>string</tt></td><td class="func-name"><tt>UISelectDirectory</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcUI-DirectorySelectionOptions.html">pfcDirectorySelectionOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to select a directory.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUserAbort.html">pfcXToolkitUserAbort</a></b></tt></b></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for directory selection dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected directory path.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UIShowMessageDialog">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcUI-MessageButton.html">pfcMessageButton</a></tt></td><td class="func-name"><tt>UIShowMessageDialog</tt></td><td class="func-params"><tt>
+ (string&nbsp;Message, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUI-MessageDialogOptions.html">pfcMessageDialogOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Displays the UI Message Dialog.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Message</b></tt>
+</dt>
+<dd>The message text to be displayed in the dialog.</dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for message dialog. If null, a default message dialog is displayed, with only an OK button and an Info icon and title. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The identifier of the button that the user pressed to dismiss the dialog.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

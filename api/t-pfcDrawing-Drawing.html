@@ -1,0 +1,875 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcDrawing"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDrawing.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDrawing-Drawing.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDrawing</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a drawing. 
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcModel2D-Model2D.html">pfcModel2D</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a></tt></td><td class="func-signature"><tt><a class="method" href="#ConvertLinearDimensionToBaseline">ConvertLinearDimensionToBaseline</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Vector2D.html">pfcVector2D</a>&nbsp;Location)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing linear dimension to ordinate baseline. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ConvertLinearDimensionToOrdinate">ConvertLinearDimensionToOrdinate</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;BaselineDimension)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing linear dimension to ordinate. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ConvertOrdinateDimensionToLinear">ConvertOrdinateDimensionToLinear</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing ordinate dimension to linear. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EraseDimension">EraseDimension</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Erase dimension from specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetBaselineDimension">GetBaselineDimension</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if dimension is an ordinate dimension and if it is ordinate then returns baseline dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionAttachPoints">GetDimensionAttachPoints</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets attachment information of dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionLocation">GetDimensionLocation</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get location of dimension text in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionOrientHint">GetDimensionOrientHint</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets orientation of dimension </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionSenses">GetDimensionSenses</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets sense information of dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionView">GetDimensionView</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get drawing view of dimension.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionAssociative">IsDimensionAssociative</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if solid dimension shown in drawing is associative.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionShown">IsDimensionShown</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if dimension is shown in a specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionToleranceDisplayed">IsDimensionToleranceDisplayed</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Indicates whether a drawing dimension's tolerance is visible or not. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDimensionLocation">SetDimensionLocation</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a>&nbsp;ToLocation)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Changes location of dimension text. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SwitchDimensionView">SwitchDimensionView</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Change view of the dimension in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="ConvertLinearDimensionToBaseline">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a></tt></td><td class="func-name"><tt>ConvertLinearDimensionToBaseline</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Vector2D.html">pfcVector2D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing linear dimension to ordinate baseline. To use this method drawing must be displayed. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Linear dimension. </dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>A point on one of the extension lines of the linear dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertLinearDimensionToOrdinate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ConvertLinearDimensionToOrdinate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;BaselineDimension)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing linear dimension to ordinate. To use this method drawing must be displayed. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Linear dimension. </dd>
+<dt>
+<tt><b>BaselineDimension</b></tt>
+</dt>
+<dd>Baseline dimension.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertOrdinateDimensionToLinear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ConvertOrdinateDimensionToLinear</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing ordinate dimension to linear. To use this method drawing must be displayed. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EraseDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>EraseDimension</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Erase dimension from specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is not shown in the target model. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetBaselineDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a></tt></td><td class="func-name"><tt>GetBaselineDimension</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if dimension is an ordinate dimension and if it is ordinate then returns baseline dimension. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>NULL value means dimension is not ordinate. For ordinate dimension returns its baseline. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionAttachPoints">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments</a></tt></td><td class="func-name"><tt>GetDimensionAttachPoints</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets attachment information of dimension. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Attachment information </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a></tt></td><td class="func-name"><tt>GetDimensionLocation</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get location of dimension text in specified drawing. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Location. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionOrientHint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-name"><tt>GetDimensionOrientHint</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets orientation of dimension <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>orientation</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionSenses">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses</a></tt></td><td class="func-name"><tt>GetDimensionSenses</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets sense information of dimension. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Array of sense.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a></tt></td><td class="func-name"><tt>GetDimensionView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get drawing view of dimension.  <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - The dimension is not displayed in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A drawing view. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDimensionAssociative">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsDimensionAssociative</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if solid dimension shown in drawing is associative.  <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd> Solid dimension shown in the drawing. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if dimension is associative. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDimensionShown">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsDimensionShown</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if dimension is shown in a specified drawing. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if it is shown. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDimensionToleranceDisplayed">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsDimensionToleranceDisplayed</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Indicates whether a drawing dimension's tolerance is visible or not. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if dimension's tolerance is visible. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDimensionLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDimensionLocation</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a>&nbsp;ToLocation)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Changes location of dimension text. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension to be moved.</dd>
+<dt>
+<tt><b>ToLocation</b></tt>
+</dt>
+<dd>New location. </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SwitchDimensionView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SwitchDimensionView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension</a>&nbsp;Dim, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Change view of the dimension in specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not delete the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>New drawing view. </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

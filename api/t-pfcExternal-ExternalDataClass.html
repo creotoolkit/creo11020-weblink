@@ -1,0 +1,355 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcExternalDataClass"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcExternal.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcExternal-ExternalDataClass.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcExternalDataClass</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>A class that represents a named "bin" for external data so other applications
+will not use the data by mistake. An application usually needs one class.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Object.html">pfcObject</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#Name">Name</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Unique name of the class for this model</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcExternal-ExternalDataAccess.html">pfcExternalDataAccess</a></tt></td><td class="func-signature"><tt><a class="method" href="#Parent">Parent</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">ExternalDataAccess object to which the class belongs</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataSlot.html">pfcExternalDataSlot</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateSlot">CreateSlot</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new slot for the external data class
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes the external data class from the model
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsValid">IsValid</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns true if the class is valid and can be accessed, false if it has been deleted
+or it cannot be accessed.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataSlots.html">pfcExternalDataSlots</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListSlots">ListSlots</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists all the slots available for the class
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>Name</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Unique name of the class for this model<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Class is no longer valid</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Parent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;<a class="type" href="t-pfcExternal-ExternalDataAccess.html">pfcExternalDataAccess</a></tt></td><td class="func-name"><tt>Parent</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>ExternalDataAccess object to which the class belongs<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Class is no longer valid</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CreateSlot">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataSlot.html">pfcExternalDataSlot</a></tt></td><td class="func-name"><tt>CreateSlot</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new slot for the external data class
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The specified model or class name is invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataClassOrSlotExists.html">pfcXExternalDataClassOrSlotExists</a></b></tt></b></tt> - The specified slot already exists in the specified class. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataNamesTooLong.html">pfcXExternalDataNamesTooLong</a></b></tt></b></tt> - The specified slot or class name exceeds the length PRO_NAME_SIZE. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Class is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The unique name for the slot.  This name cannot begin with a number.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new external data slot</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes the external data class from the model
+   <br>
+<br>Deletes permanenly the class and all its slots.
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The specified model or class name is invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Class is no longer valid</p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsValid">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsValid</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns true if the class is valid and can be accessed, false if it has been deleted
+or it cannot be accessed.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The class status</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListSlots">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataSlots.html">pfcExternalDataSlots</a></tt></td><td class="func-name"><tt>ListSlots</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists all the slots available for the class
+<br>
+<br>Note that slots created by Creo Parametric TOOLKIT applications may not have cutomized names,
+just numbers.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The model is invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataBadDataArgs.html">pfcXExternalDataBadDataArgs</a></b></tt></b></tt> - The slot ids and/or slot names are invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Class is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of external data slots</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

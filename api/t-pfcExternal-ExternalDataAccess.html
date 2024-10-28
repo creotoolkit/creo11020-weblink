@@ -1,0 +1,303 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcExternalDataAccess"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcExternal.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcExternal-ExternalDataAccess.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcExternalDataAccess</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Object that represents a conduit to the external data stored in the Creo Parametric file.
+<br>
+<br>To make the external data available for the next session of Creo Parametric save the model.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Child.html">pfcChild</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataClass.html">pfcExternalDataClass</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateClass">CreateClass</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a class in the model's external data.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-signature"><tt><a class="method" href="#IsValid">IsValid</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns true if this object is still valid for this model, false if access has been terminated
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataClasses.html">pfcExternalDataClasses</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListClasses">ListClasses</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists all of the external data classes for the model
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#LoadAll">LoadAll</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Loads all of the model's external data into memory.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ReleaseDataBuffer">ReleaseDataBuffer</a>
+ (<a class="type" href="t-pfcExternal-ExternalData.html">pfcExternalData</a>&nbsp;data)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Frees the memory allocated for data buffer.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CreateClass">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataClass.html">pfcExternalDataClass</a></tt></td><td class="func-name"><tt>CreateClass</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a class in the model's external data.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The specified model or class name is invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataClassOrSlotExists.html">pfcXExternalDataClassOrSlotExists</a></b></tt></b></tt> - The specified class name already exists. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataNamesTooLong.html">pfcXExternalDataNamesTooLong</a></b></tt></b></tt> - The specified class name exceeds the length 32. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name for the class.  This must be unique, and typically reflects the name and/or purpose ofthe application.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the new external data class.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsValid">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="func-name"><tt>IsValid</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns true if this object is still valid for this model, false if access has been terminated
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The status</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListClasses">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalDataClasses.html">pfcExternalDataClasses</a></tt></td><td class="func-name"><tt>ListClasses</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists all of the external data classes for the model
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The specified model is invalid. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of class objects.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="LoadAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>LoadAll</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Loads all of the model's external data into memory.
+<br>
+<br>Using this method can improve the performance of reading the model data.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataTKError.html">pfcXExternalDataTKError</a></b></tt></b></tt> - The function failed.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XExternalDataInvalidObject.html">pfcXExternalDataInvalidObject</a></b></tt></b></tt> - The specified model is invalid.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XBadExternalData.html">pfcXBadExternalData</a></b></tt></b></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ReleaseDataBuffer">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ReleaseDataBuffer</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcExternal-ExternalData.html">pfcExternalData</a>&nbsp;data)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Frees the memory allocated for data buffer.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>data</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

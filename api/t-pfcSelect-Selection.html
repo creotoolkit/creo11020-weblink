@@ -1,0 +1,610 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcSelection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSelect.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSelect-Selection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcSelection</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class represents a selection.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Object.html">pfcObject</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#Depth">Depth</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The depth of the selection</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-UVParams.html">pfcUVParams</a></tt></td><td class="func-signature"><tt><a class="method" href="#Params">Params</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The UV parameters</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath</a></tt></td><td class="func-signature"><tt><a class="method" href="#Path">Path</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The component path</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a></tt></td><td class="func-signature"><tt><a class="method" href="#Point">Point</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The point</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#SelectionString">SelectionString</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Web.Link style selection string representation for this selection.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelItem">SelItem</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The selected model item</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModel-Model.html">pfcModel</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelModel">SelModel</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The selected model</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcTable-TableCell.html">pfcTableCell</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelTableCell">SelTableCell</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The table cell, or <tt>null</tt>, if the selection does not represent a drawing table cell selection.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#SelTableSegment">SelTableSegment</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The drawing table segment, or <tt>null</tt>, if the selection does not contain a drawing table.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelView2D">SelView2D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The drawing view, or <tt>null</tt>, if the selection does not contain a drawing view.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-signature"><tt><a class="method" href="#TParam">TParam</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The T parameter of an edge or curve</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Display">Display</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Displays the selection. Note that this is a one-time action
+(the next repaint will erase this display).
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Highlight">Highlight</a>
+ (<a class="type" href="t-pfcBase-StdColor.html">pfcStdColor</a>&nbsp;Color)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Highlights the selection in the current window.
+The selection remains highlighted until you call the 
+<b>Unhighlight()</b> function.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetIntf3DCsys">SetIntf3DCsys</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;ReferenceCsys)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Set reference CSYS for export file.
+       User should conver <tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt></b></tt> to  
+       <tt><b><tt><b><a class="enumtype" href="t-pfcSelect-Selection.html">pfcSelection</a></b></tt></b></tt> and then call this method on it.
+       Use method pfcCreateModelSelection() to get 
+       <tt><b><tt><b><a class="enumtype" href="t-pfcSelect-Selection.html">pfcSelection</a></b></tt></b></tt> from <tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt></b></tt>
+     </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UnHighlight">UnHighlight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes the highlighting from the selection 
+highlighted by a previous call to the <b>Highlight()</b> function.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Depth">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>Depth</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The depth of the selection<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - The selection argument is an invalid pointer.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Params">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-UVParams.html">pfcUVParams</a></tt></td><td class="func-name"><tt>Params</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The UV parameters<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Path">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath</a></tt></td><td class="func-name"><tt>Path</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The component path<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Point">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D</a></tt></td><td class="func-name"><tt>Point</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The point<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - The selection argument is an invalid pointer.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelectionString">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>SelectionString</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Web.Link style selection string representation for this selection.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelItem">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-name"><tt>SelItem</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The selected model item<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The model item doesn't exist.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelModel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModel-Model.html">pfcModel</a></tt></td><td class="func-name"><tt>SelModel</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The selected model<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The model item doesn't exist.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - no associated drawing found</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelTableCell">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcTable-TableCell.html">pfcTableCell</a></tt></td><td class="func-name"><tt>SelTableCell</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The table cell, or <tt>null</tt>, if the selection does not represent a drawing table cell selection.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelTableSegment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>SelTableSegment</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The drawing table segment, or <tt>null</tt>, if the selection does not contain a drawing table.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelView2D">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D</a></tt></td><td class="func-name"><tt>SelView2D</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The drawing view, or <tt>null</tt>, if the selection does not contain a drawing view.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - no associated drawing found</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TParam">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;number</tt></td><td class="func-name"><tt>TParam</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The T parameter of an edge or curve<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Display">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Display</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Displays the selection. Note that this is a one-time action
+(the next repaint will erase this display).
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Highlight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Highlight</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-StdColor.html">pfcStdColor</a>&nbsp;Color)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Highlights the selection in the current window.
+The selection remains highlighted until you call the 
+<b>Unhighlight()</b> function.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Color</b></tt>
+</dt>
+<dd>The highlight color</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetIntf3DCsys">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIntf3DCsys</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcSelect-Selection.html">pfcSelection</a>&nbsp;ReferenceCsys)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Set reference CSYS for export file.
+       User should conver <tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt></b></tt> to  
+       <tt><b><tt><b><a class="enumtype" href="t-pfcSelect-Selection.html">pfcSelection</a></b></tt></b></tt> and then call this method on it.
+       Use method pfcCreateModelSelection() to get 
+       <tt><b><tt><b><a class="enumtype" href="t-pfcSelect-Selection.html">pfcSelection</a></b></tt></b></tt> from <tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt></b></tt>
+     
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ReferenceCsys</b></tt>
+</dt>
+<dd>
+       The reference coordinate system selection.
+       This is Optional argument.
+       Call this method without any argument to set
+       default coordinate system.
+       Reference CSYS is not supported for CADDS and NEUTRAL file types.
+     </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UnHighlight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UnHighlight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes the highlighting from the selection 
+highlighted by a previous call to the <b>Highlight()</b> function.
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

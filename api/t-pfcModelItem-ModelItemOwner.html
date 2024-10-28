@@ -1,0 +1,315 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcModelItemOwner"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelItem.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelItem-ModelItemOwner.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcModelItemOwner</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This is a base class for an object that has model items associated with it
+(such as a model).
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Parent.html">pfcParent</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetItemById">GetItemById</a>
+ (<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type, number&nbsp;Id)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the specified model item, given its identifier and type.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetItemByName">GetItemByName</a>
+ (<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type, string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a model item, given a string name and type, if it exists.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListItems">ListItems</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a list of model items of the specified type.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="GetItemById">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-name"><tt>GetItemById</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type, number&nbsp;Id)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the specified model item, given its identifier and type.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - This means either:
+    <ul>
+      
+<li>Feature with such identifier does not exist, OR</li>
+	  
+<li>Item with such id and type does not exist.</li>
+	
+</ul>
+	
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of the model item (feature, edge, and so on)</dd>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The integer identifier of the model item</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model item with the specified attributes, or <tt>null</tt> if a model item withsuch attributes has not been found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetItemByName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></tt></td><td class="func-name"><tt>GetItemByName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type, string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a model item, given a string name and type, if it exists.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - This means either:
+    <ul>
+       
+<li>The specified <i>layer_name</i> does not exist in <i>owner</i>, OR</li>
+	   
+<li>The item was not found, OR</li>
+	   
+<li>The function did not find simplified representation in the solid.</li>
+	
+</ul>
+    
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcModelItem-ModelItem.html#GetName">pfcModelItem.GetName()</a></b></tt>, <tt><b><a class="method" href="t-pfcModelItem-ModelItem.html#SetName">pfcModelItem.SetName()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of the model item to locate.</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the model item to locate.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model item object, or <tt>null</tt>, if the item was not found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListItems">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems</a></tt></td><td class="func-name"><tt>ListItems</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a list of model items of the specified type.
+<br>
+<br>
+      Following model item types are supported for <b>Solid models</b>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_FEATURE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_SURFACE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_COORD_SYS </a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_AXIS</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_QUILT</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_EDGE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_POINT</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_CURVE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_LAYER</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_SOLID_GEOMETRY</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_NOTE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DIMENSION</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_REF_DIMENSION</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_EXPLODED_STATE </a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_SIMPREP</a></b></tt>
+      
+<br>
+      Following model item types are supported for<b>2D models</b>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_TABLE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DIMENSION</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_REF_DIMENSION</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DTL_ENTITY</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DTL_GROUP</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DTL_SYM_DEFINITION</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DTL_SYM_INSTANCE</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_DTL_OLE_OBJECT</a></b></tt>
+      <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItemType.html">ITEM_LAYER</a></b></tt>
+      
+<br>
+    
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of model items to retrieve. If this parameter is <tt>null</tt>, then allthe model items will be listed.<p></p>
+Note that only those surfaces associated with solid geometry are included in the list of model items when you specify <tt>ITEM_SURFACE</tt> or <tt>null</tt> as the <i>Type</i> . Surfaces of Creo Parametric Surface features and Quilts are not included. To obtain a list of the quilt features with their component datum surfaces, specify <tt>ITEM_QUILT</tt>. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of model items, or <tt>null</tt> if no model items of the specified type has been found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

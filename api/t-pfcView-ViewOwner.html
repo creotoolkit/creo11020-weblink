@@ -1,0 +1,485 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcViewOwner"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcView.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcView-ViewOwner.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcViewOwner</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This is a base class for an object that has views associated with it
+(such as model).
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Parent.html">pfcParent</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModel-Model.html">pfcModel</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CurrentViewRotate">CurrentViewRotate</a>
+ (<a class="type" href="t-pfcBase-CoordAxis.html">pfcCoordAxis</a>&nbsp;Axis, number&nbsp;Angle)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Rotate the object in current view with respect to X, Y or Z axes.
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetCurrentView">GetCurrentView</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a view object representing the current orientation of the model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetCurrentViewTransform">GetCurrentViewTransform</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the transformation for a model in the current view. The transformation is from the object's coordinate system to logical screen coordinates.
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetView">GetView</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the specified view, given its name. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-Views.html">pfcViews</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListViews">ListViews</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the views associated with the object
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-signature"><tt><a class="method" href="#RetrieveView">RetrieveView</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the current view to the orientation
+previously saved with a specified name.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-signature"><tt><a class="method" href="#SaveView">SaveView</a>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This method saves the view with a specified name.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetCurrentViewTransform">SetCurrentViewTransform</a>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D</a>&nbsp;TrForm)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the transformation of a model in the current view. This is the transformation between model coordinates and screen coordinates.
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CurrentViewRotate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CurrentViewRotate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-CoordAxis.html">pfcCoordAxis</a>&nbsp;Axis, number&nbsp;Angle)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Rotate the object in current view with respect to X, Y or Z axes.
+  <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Axis</b></tt>
+</dt>
+<dd>The rotation axis</dd>
+<dt>
+<tt><b>Angle</b></tt>
+</dt>
+<dd>The rotation angle, in degrees</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetCurrentView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-name"><tt>GetCurrentView</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a view object representing the current orientation of the model.
+<br>
+<br>This method is deprecated.
+  <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The current View object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetCurrentViewTransform">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D</a></tt></td><td class="func-name"><tt>GetCurrentViewTransform</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the transformation for a model in the current view. The transformation is from the object's coordinate system to logical screen coordinates.
+  <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The transformation is invalid.</p>
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The transformation object.
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-name"><tt>GetView</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the specified view, given its name. 
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - A view was not found for the specified name.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - The specified view is not retrievable; e.g. the model is sheet metal at a certain stage of bending or unbending. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcView-ViewOwner.html#RetrieveView">pfcViewOwner.RetrieveView()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the view to get</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The named view, or <tt>null</tt>, if a view with the specified name has not been found</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListViews">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-Views.html">pfcViews</a></tt></td><td class="func-name"><tt>ListViews</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the views associated with the object
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of views, or <tt>null</tt>, if there are no views associated with thisobject.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RetrieveView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-name"><tt>RetrieveView</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the current view to the orientation
+previously saved with a specified name.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The function was unable to retrieve a view with the specified name. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the view to retrieve</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The retrieved view or <tt>null</tt>, if a view with the specified name has not been found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SaveView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcView-View.html">pfcView</a></tt></td><td class="func-name"><tt>SaveView</tt></td><td class="func-params"><tt>
+ (string&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This method saves the view with a specified name.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No view names were found for the specified model. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name used to store the view.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The saved view.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetCurrentViewTransform">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCurrentViewTransform</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D</a>&nbsp;TrForm)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the transformation of a model in the current view. This is the transformation between model coordinates and screen coordinates.
+  <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+  
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The transformation is invalid.</p>
+</p>
+     
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TrForm</b></tt>
+</dt>
+<dd>The transformation object.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

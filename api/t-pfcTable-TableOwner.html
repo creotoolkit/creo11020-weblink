@@ -1,0 +1,438 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcTableOwner"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcTable.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcTable-TableOwner.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcTableOwner</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a Creo Parametric model that can contain tables.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcModel2D-Model2D.html">pfcModel2D</a></b></tt></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModel2D-Model2D.html">pfcModel2D</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateTable">CreateTable</a>
+ (<a class="type" href="t-pfcTable-TableCreateInstructions.html">pfcTableCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a table in the model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteTable">DeleteTable</a>
+ (<a class="type" href="t-pfcTable-Table.html">pfcTable</a>&nbsp;Table, 
+   /*&nbsp;optional&nbsp;*/&nbsp;boolean&nbsp;Repaint)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes a table from the model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTable">GetTable</a>
+ (number&nbsp;Id)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets a table in the model, given its identifier.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Tables.html">pfcTables</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListTables">ListTables</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Lists the tables in the model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-signature"><tt><a class="method" href="#RetrieveTable">RetrieveTable</a>
+ (<a class="type" href="t-pfcTable-TableRetrieveInstructions.html">pfcTableRetrieveInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves a table from a file on disk.This method always place table's top left corner at a point sepcified by instruction.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-signature"><tt><a class="method" href="#RetrieveTableByOrigin">RetrieveTableByOrigin</a>
+ (<a class="type" href="t-pfcTable-TableRetrieveInstructions.html">pfcTableRetrieveInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves a table from a file on disk. This method place table's origin at a point sepcified by instructions.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UpdateTables">UpdateTables</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Updates all drawing tables.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CreateTable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-name"><tt>CreateTable</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcTable-TableCreateInstructions.html">pfcTableCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a table in the model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     	 
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcTable-TableCreateInstructions.html#Create">pfcTableCreateInstructions.Create()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing information on the table to create.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created table.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteTable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteTable</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcTable-Table.html">pfcTable</a>&nbsp;Table, 
+   /*&nbsp;optional&nbsp;*/&nbsp;boolean&nbsp;Repaint)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes a table from the model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The specified <i>table_id</i> does not exist.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Table</b></tt>
+</dt>
+<dd>The table to delete.</dd>
+<dt>
+<tt><b>Repaint</b></tt>
+</dt>
+<dd>
+<tt>true</tt> to repaint the drawing with the changes, <tt>false</tt> or <tt>null</tt> to delay the repaint.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-name"><tt>GetTable</tt></td><td class="func-params"><tt>
+ (number&nbsp;Id)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets a table in the model, given its identifier.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The table identifier.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The table, or <tt>null</tt>, if the table was not found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListTables">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Tables.html">pfcTables</a></tt></td><td class="func-name"><tt>ListTables</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Lists the tables in the model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No tables were found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of tables found in the model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RetrieveTable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-name"><tt>RetrieveTable</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcTable-TableRetrieveInstructions.html">pfcTableRetrieveInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves a table from a file on disk.This method always place table's top left corner at a point sepcified by instruction.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcTable-TableRetrieveInstructions.html#Create">pfcTableRetrieveInstructions.Create()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing details about the table to be retrieved.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created table.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RetrieveTableByOrigin">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable</a></tt></td><td class="func-name"><tt>RetrieveTableByOrigin</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcTable-TableRetrieveInstructions.html">pfcTableRetrieveInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves a table from a file on disk. This method place table's origin at a point sepcified by instructions.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcTable-TableRetrieveInstructions.html#Create">pfcTableRetrieveInstructions.Create()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing details about the table to be retrieved.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created table.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UpdateTables">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UpdateTables</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Updates all drawing tables.
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

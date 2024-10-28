@@ -1,0 +1,434 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JavaScript documentation for class "
+	pfcParameter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+<body class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelItem.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelItem-Parameter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcParameter</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines a parameter object.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcModelItem-BaseParameter.html">pfcBaseParameter</a>, 
+        <a class="class" href="t-pfcModelItem-NamedModelItem.html">pfcNamedModelItem</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;string</tt></td><td class="func-signature"><tt><a class="method" href="#Description">Description</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Parameter description string.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a></tt></td><td class="func-signature"><tt><a class="method" href="#Units">Units</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Units assigned to the parameter.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes a parameter.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ParameterDriverType.html">pfcParameterDriverType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDriverType">GetDriverType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Obtains the type of driver for a material parameter.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ParameterRestriction.html">pfcParameterRestriction</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetRestriction">GetRestriction</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Identifies if a parameter's value is restricted to a certain range or enumerated.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetScaledValue">GetScaledValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the parameter value in the units of the parameter, instead of the units of the owner model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Reorder">Reorder</a>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter</a>&nbsp;ParamBefore)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Reorders the given parameter to come just after the indicated parameter.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetScaledValue">SetScaledValue</a>
+ (<a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a>&nbsp;value, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a>&nbsp;Units)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the parameter value in terms of the units provided, instead of using the units of the owner model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Description">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;string</tt></td><td class="func-name"><tt>Description</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Parameter description string.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The parameter's description is not set.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Units">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;readonly&nbsp;*/&nbsp;
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a></tt></td><td class="func-name"><tt>Units</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Units assigned to the parameter.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The parameter is unitless.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes a parameter.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDriverType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ParameterDriverType.html">pfcParameterDriverType</a></tt></td><td class="func-name"><tt>GetDriverType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Obtains the type of driver for a material parameter.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter driver type.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetRestriction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-ParameterRestriction.html">pfcParameterRestriction</a></tt></td><td class="func-name"><tt>GetRestriction</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Identifies if a parameter's value is restricted to a certain range or enumerated.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter restriction.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetScaledValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a></tt></td><td class="func-name"><tt>GetScaledValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the parameter value in the units of the parameter, instead of the units of the owner model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter scaled value.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Reorder">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Reorder</tt></td><td class="func-params"><tt>
+ (
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter</a>&nbsp;ParamBefore)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Reorders the given parameter to come just after the indicated parameter.
+   <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - Parameter 'param_before' does not have the same owner as the parameter to be reordered. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - No license is available for this functionality.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParamBefore</b></tt>
+</dt>
+<dd>
+   The parameter to be just before the reordered parameter. If NULL, the reordered parameter is moved to the first position in the parameter list.
+  </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetScaledValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetScaledValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue</a>&nbsp;value, 
+   /*&nbsp;optional&nbsp;*/&nbsp;<a class="type" href="t-pfcUnits-Unit.html">pfcUnit</a>&nbsp;Units)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the parameter value in terms of the units provided, instead of using the units of the owner model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The owner was not found.</p>
+     
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The unit type provided does not match the units of the parameter. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>
+   The value of the parameter to be set.
+  </dd>
+<dt>
+<tt><b>Units</b></tt>
+</dt>
+<dd>
+   The units in which the value is expressed. The value can be <i>null</i>.
+  </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

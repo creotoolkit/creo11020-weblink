@@ -1,0 +1,2216 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JFeat" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Features</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJFEAT0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.16.1" class="ChapterTitle">Features</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">All <span class=" x-ph-2-0" id="JFeat_Features-B89C9B3F_PTCCreoParametric-E96269BB_18_8"><span xmlns="" profilecode="1">Creo Parametric</span></span> solid models are made up of features. This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes how to program on the feature level using <span class=" x-ph-2-0">Web.Link</span> .
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JFeat_AccessToFeatures-B6110B28_18_12">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.3.1" class="Heading1">Access to Features</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="2"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="3"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="4"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="5"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="6"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="7"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="8"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="9"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="10"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="11"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="12"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.ListChildren()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.ListParents()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="14"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.GroupLeader</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.GroupDirectHeader</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="16"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeaturePattern.PatternLeader</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="17"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeaturePattern.ListMembers()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="18"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.ListFailedFeatures()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="19"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.ListFeaturesByType()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.GetFeatureById()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="21"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcBaseSession.QueryFeatureEdit()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.ListChildren()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.ListParents()</span></span> return a sequence of features that contain all the children or parents of the specified feature.
+               </div>
+               <div class=" x-p-7-0">To get the first feature in the specified group access the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.GroupLeader</span></span>.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.GroupDirectHeader</span></span> returns the direct header of the group.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.PatternLeader</span></span> and the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.ListMembers()</span></span> return features that make up the specified feature pattern. See the section <a href="#JFeat_FeatureGroupsAndPatterns-B8889B6718_76" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Feature Groups and Patterns</a> for more information on feature patterns.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.ListFailedFeatures()</span></span> returns a sequence that contains all the features that failed regeneration.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.ListFeaturesByType()</span></span> returns a sequence of features contained in the model. You can specify which type of feature to collect by passing in one
+                  of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureType</span></span> enumeration objects, or you can collect all features by passing <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">void null</span></span> as the type. If you list all features, the resulting sequence will include invisible features that <span class=" x-ph-2-0" id="JFeat_AccessToFeatures-B6110B28_PTCCreoParametric-E96269_18_82"><span xmlns="" profilecode="1">Creo Parametric</span></span> creates internally. Internal features are invisible features used internally for construction purposes. Use the method&#8217;s
+                  <span class=" x-parmname-3-0">VisibleOnly</span> argument to exclude them. If the argument <span class=" x-parmname-3-0">VisibleOnly</span> is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">True</span></span>, the function lists the public features only. If the argument is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">False</span></span>, the function lists both public and internal features.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.GetFeatureById()</span></span> returns the feature object with the corresponding integer identifier.
+               </div>
+               <div class=" x-p-7-0">A feature can be edited with the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Edit Definition</span></span> command in <span class=" x-ph-2-0" id="JFeat_AccessToFeatures-B6110B28_PTCCreoParametric-E96269_18_82"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBaseSession.QueryFeatureEdit()</span></span> returns a list of all the features that are currently being edited by the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Edit Definition</span></span> command.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JFeat_FeatureInformation-B89CA5B1_18_94">
+            
+            <a name="22"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.4.1" class="Heading1">Feature Information</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="23"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="24"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="25"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="26"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="27"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.FeatType</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="28"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.Status</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="29"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.IsVisible</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="30"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.IsReadonly</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="31"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.IsEmbedded</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="32"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.Number</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="33"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.FeatTypeName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="34"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.FeatSubType</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="35"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcRoundFeat.IsAutoRoundMember</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The enumeration classes <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureType</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureStatus</span></span> provide information for a specified feature. The following properties specify this information:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"> <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.FeatType</span></span>&#8212;Returns the type of a feature.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"> <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.Status</span></span>&#8212;Returns whether the feature is suppressed, active, or failed regeneration.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The other properties that gather feature information include the following:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.IsVisible</span></span>&#8212;Identifies whether the specified feature will be visible on the screen. The method distinguishes visible features from internal
+                                 features. Internal features are invisible features used for construction purposes.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.IsReadonly</span></span>&#8212;Identifies whether the specified feature can be modified.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.IsEmbedded</span></span>&#8212;Specifies whether the specified feature is an embedded datum.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.Number</span></span>&#8212;Returns the feature regeneration number. This method returns <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">void null</span></span> if the feature is suppressed.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.FeatTypeName</span></span> returns a string representation of the feature type.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.FeatSubType</span></span> returns a string representation of the feature subtype, for example, "Extrude" for a protrusion feature.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcRoundFeat.IsAutoRoundMember</span></span> determines whether the specified round feature is a member of an Auto Round feature.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JFeat_FeatureOperations-B88FA48D_18_165">
+            
+            <a name="36"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.5.1" class="Heading1">Feature Operations</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="37"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="38"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="39"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="40"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="41"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="42"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.ExecuteFeatureOps()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="43"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.CreateSuppressOp()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="44"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSuppressOperation.Clip</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="45"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSuppressOperation.AllowGroupMembers</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="46"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSuppressOperation.AllowChildGroupMembers</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="47"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.CreateDeleteOp()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="48"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcDeleteOperation.Clip</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="49"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcDeleteOperation.AllowGroupMembers</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="50"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcDeleteOperation.AllowChildGroupMembers</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="51"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcDeleteOperation.KeepEmbeddedDatums</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="52"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.CreateResumeOp()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="53"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcResumeOperation.WithParents</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="54"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.CreateReorderBeforeOp()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="55"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcReorderBeforeOperation.BeforeFeat</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="56"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.CreateReorderAfterOp()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="57"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcReorderAfterOperation.AfterFeat</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.ExecuteFeatureOps()</span></span> causes a sequence of feature operations to run in order. Feature operations include suppressing, resuming, reordering, and
+                  deleting features. The optional <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcRegenInstructions</span></span> argument specifies whether the user will be allowed to fix the model if a regeneration failure occurs.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">Regenerating models in <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">resolve_mode</span></span> is not supported. As a result, the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.ExecuteFeatureOps()</span></span> is not supported anymore. 
+                  </div>
+               </div>
+               <div class=" x-p-7-0">You can create an operation that will delete, suppress, reorder, or resume certain features using the methods in the class
+                  <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature</span></span>. Each created operation must be passed as a member of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureOperations</span></span> object to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.ExecuteFeatureOps()</span></span>. 
+               </div>
+               <div class=" x-p-7-0">Some of the operations have specific options that you can modify to control the behavior of the operation:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Clip</span></span>&#8212;Specifies whether to delete or suppress all features after the selected feature. By default, this option is false. </span><div class=" x-p-5-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcDeleteOperation.Clip</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSuppressOperation.Clip</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AllowGroupMembers</span></span>&#8212;If this option is set to true and if the feature to be deleted or suppressed is a member of a group, then the feature will
+                                 be deleted or suppressed out of the group. If this option is set to false, then the entire group containing the feature is
+                                 deleted or suppressed. By default, this option is false. It can be set to true only if the option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Clip</span></span> is set to true.</span><div class=" x-p-5-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSuppressOperation.AllowGroupMembers</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcDeleteOperation.AllowGroupMembers</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AllowChildGroupMembers</span></span>&#8212;If this option is set to true and if the children of the feature to be deleted or suppressed are members of a group, then
+                                 the children of the feature will be individually deleted or suppressed out of the group. If this option is set to false, then
+                                 the entire group containing the feature and its children is deleted or suppressed. By default, this option is false. It can
+                                 be set to true only if the options <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Clip</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AllowGroupMembers</span></span>  are set to true.</span><div class=" x-p-5-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSuppressOperation.AllowChildGroupMembers</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcDeleteOperation.AllowChildGroupMembers</span></span>  to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KeepEmbeddedDatums</span></span>&#8212;Specifies whether to retain the embedded datums stored in a feature while deleting the feature. By default, this option is
+                                 false.</span><div class=" x-p-5-0">Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcDeleteOperation.KeepEmbeddedDatums</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">WithParents</span></span>&#8212;Specifies whether to resume the parents of the selected feature.</span><div class=" x-p-5-0">Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcResumeOperation.WithParents</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">BeforeFeat</span></span>&#8212;Specifies the feature before which you want to reorder the features.</span><div class=" x-p-5-0">Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcReorderBeforeOperation.BeforeFeat</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AfterFeat</span></span>&#8212;Specifies the feature after which you want to reorder the features.</span><div class=" x-p-5-0">Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcReorderAfterOperation.AfterFeat</span></span> to modify this option.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JFeat_FeatureGroupsAndPatterns-B8889B6718_76">
+            
+            <a name="58"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.6.1" class="Heading1">Feature Groups and Patterns</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="59"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="60"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="61"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="62"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="63"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="64"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="65"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="66"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="67"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Patterns are treated as features in <span class=" x-ph-2-0" id="JFeat_FeatureGroupsAndPatterns-B8889B67_PTCCreoParametri_18_303"><span xmlns="" profilecode="1">Creo Parametric</span></span>. A feature type, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FEATTYPE_PATTERN_HEAD</span></span>, is used for the pattern header feature. 
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">The pattern header feature is not treated as a leader or a member of the pattern by the methods described in the following
+                     section.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="68"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.Group</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="69"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.Pattern</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="70"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.GetPatternByType()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="71"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.PatternStatus</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="72"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.GroupStatus</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="73"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeature.GroupPatternStatus</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="74"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.CreateLocalGroup()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="75"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.Pattern</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="76"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.GroupLeader</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="77"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeaturePattern.PatternLeader</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="78"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeaturePattern.ListMembers()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="79"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeaturePattern.Delete()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.Group</span></span> returns a handle to the local group that contains the specified feature.
+               </div>
+               <div class=" x-p-7-0">To get the first feature in the specified group call the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.GroupLeader</span></span>.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.Pattern</span></span> and the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.ListMembers()</span></span> return features that make up the specified feature pattern.
+               </div>
+               <div class=" x-p-7-0">A pattern is composed of a pattern header feature and a number of member features. You can pattern only a single feature.
+                  To pattern several features, create a local group and pattern this group.
+               </div>
+               <div class=" x-p-7-0">You can also create a pattern of pattern. This creates a multiple level pattern. From <span class=" x-ph-2-0" id="JFeat_FeatureGroupsAndPatterns-B8889B67_PTCCreoParametri_18_303"><span xmlns="" profilecode="1">Creo Parametric</span></span><span class=" x-ph-2-0">2.0 M170</span> onward, for a pattern of pattern, the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.ListMembers()</span></span> returns all the pattern header features created at the first level.
+               </div>
+               <div class=" x-p-7-0">For example, consider a model where a pattern of pattern has been created. The model tree is as shown below:
+                  <div class=" x-fig-1-0 x-fig-1-2" id="styler-id1.1.1.16.6.3.10.1">
+                     <div class=" x-image-1-0 x-image-1-1"><img alt="Image" src="graphics/pattern_list.gif"></div>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.ListMembers()</span></span> returns the pattern header features with following IDs for a pattern of  pattern:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">119</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">177</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">221</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">265</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.Pattern</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.Pattern</span></span> return the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FeaturePattern</span></span> object that contains the corresponding <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Feature</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FeatureGroup</span></span>. Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateLocalGroup()</span></span> to take a sequence of features and create a local group with the specified name. To delete a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FeaturePattern</span></span> object, call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.Delete()</span></span>.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.GetPatternByType()</span></span> returns the pattern of the feature and is specified using the enumerated data type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcPatternType</span></span>. The valid values are:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PATTERN_FEAT</span></span>&#8212;Feature pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PATTERN_GROUP</span></span>&#8212;Group pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.PatternStatus</span></span> returns the pattern status of the feature and is specified using the enumerated data type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcPatternStatus</span></span>. The valid values are:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_NONE</span></span>&#8212;Feature does not belong to any pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_LEADER</span></span>&#8212;Feature is leader of the pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_MEMBER</span></span>&#8212;Feature is member of the pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_HEADER</span></span>&#8212;Feature is header of the pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.GroupStatus</span></span> returns the group status of the feature and is specified using the enumerated data type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcupStatus</span></span>. The valid values are:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GROUP_NONE</span></span>&#8212;Feature does not belong to any group.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GROUP_MEMBER</span></span>&#8212;Feature is member of the group.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeature.GroupPatternStatus</span></span> returns the group pattern status of the feature and is specified using the enumerated data type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GroupPatternStatus</span></span>. The valid values are:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_NONE</span></span>&#8212;Feature does not belong to any group pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_LEADER</span></span>&#8212;Feature is leader of the group pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_MEMBER</span></span>&#8212;Feature is member of the group pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GRP_PATTERN_HEADER</span></span>&#8212;Feature is header of the group pattern.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_ChangesToNotesOnFeatureGroups-B89348E2_18_432">
+               
+               <a name="80"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.16.6.4.1" class="Heading2">Feature Groups</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Feature groups have a group header feature, which shows up in the model information and feature list for the model. This feature
+                     will be inserted in the regeneration list to a position just before the first feature in the group.
+                  </div>
+                  <div class=" x-p-7-0">The results of the header feature are as follows:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Models that contain groups will get one extra feature in the regeneration list, of type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FEATTYPE_GROUP_HEAD</span></span> of the enumerated data type<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureType</span></span>. This affects the feature numbers of all subsequent features, including those in the group.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Each group automatically contains the header feature in the list of features returned from <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeaturePattern.ListMembers()</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Each group automatically gets the group head feature a s the leader. This is returned from <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.GroupLeader</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Each group pattern contains a series of groups, and each group in the pattern will be similarly constructed.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JFeat_UserDefinedFeatures-B893D8D2_18_450">
+            
+            <a name="81"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.7.1" class="Heading1">User Defined Features</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Groups in <span class=" x-ph-2-0" id="JFeat_UserDefinedFeatures-B893D8D2_PTCCreoParametric-E96_18_454"><span xmlns="" profilecode="1">Creo Parametric</span></span> represent sets of contiguous features that act as a single feature for specific operations. Individual features are affected
+                  by most operations while some operations apply to an entire group:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Suppress</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Delete</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Layers</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Patterning</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">User defined Features (UDFs) are groups of features that are stored in a file. When a UDF is placed in a new model the created
+                  features are automatically assigned to a group. A local group is a set of features that have been specifically assigned to
+                  a group to make modifications and patterning easier.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">All methods in this section can be used for UDFs and local groups.</div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_ReadAccessToGroupsAndUserDefinedFea-B893D621_18_467">
+               
+               <a name="82"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.16.7.3.1" class="Heading2">Read Access to Groups and User Defined Features</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="83"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="84"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="85"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="86"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.UDFName</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="87"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.UDFInstanceName</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="88"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcFeatureGroup.ListUDFDimensions()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="89"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFDimension.UDFDimensionName</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">User defined features (UDF&#8217;s) are groups of features that can be stored in a file and added to a new model. A local group
+                     is similar to a UDF except it is available only in the model in which is was created.
+                  </div>
+                  <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.UDFName</span></span> provides the name of the group for the specified group instance. A particular group definition can be used more than once
+                     in a particular model.
+                  </div>
+                  <div class=" x-p-7-0">If the group is a family table instance, the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.UDFInstanceName</span></span> supplies the instance name.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.ListUDFDimensions()</span></span> traverses the dimensions that belong to the UDF. These dimensions correspond to the dimensions specified as variables when
+                     the UDF was created. Dimensions of the original features that were not variables in the UDF are not included unless the UDF
+                     was placed using the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Independent</span></span> option.
+                  </div>
+                  <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFDimension.UDFDimensionName</span></span> provides access to the dimension name specified when the UDF was created, and not the name of the dimension in the current
+                     model. This name is required to place the UDF programmatically using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span>.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_18_500">
+            
+            <a name="90"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.16.8.1" class="Heading1">Creating Features from UDFs</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="91"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="92"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Method Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="93"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcSolid.CreateUDFGroup()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span> is used to create new features by retrieving and applying the contents of an existing UDF file. It is equivalent to the <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span> command <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Feature</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Create</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">User Defined</span></span>.
+               </div>
+               <div class=" x-p-7-0">To understand the following explanation of this method, you must have a good knowledge and understanding of the use of UDF&#8217;s
+                  in <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span>. PTC recommends that you read about UDF&#8217;s in the <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span> help, and practice defining and using UDF&#8217;s in <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span> before you attempt to use this method.
+               </div>
+               <div class=" x-p-7-0">When you create a UDF interactively, <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts you for the information it needs to fix the properties of the resulting features. When you create a UDF from <span class=" x-ph-2-0">Web.Link</span>, you can provide some or all of this information programmatically by filling several compact data classes that are inputs
+                  to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span>.
+               </div>
+               <div class=" x-p-7-0">During the call to <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span>, <span class=" x-ph-2-0" id="JFeat_CreatingFeaturesFromUDFs-B8943FDB_PTCCreoParametri_18_515"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts you for the following:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Information required by the UDF that was not provided in the input data structures.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Correct information to replace erroneous information</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">Such prompts are a useful way of diagnosing errors when you develop your application. This also means that, in addition to
+                  creating UDF&#8217;s programmatically to provide automatic synthesis of model geometry, you can also use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span> to create UDF&#8217;s semi-interactively. This can simplify the interactions needed to place a complex UDF making it easier for
+                  the user and less prone to error.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_CreatingUDFs-B8943C7E_18_537">
+               
+               <a name="94"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.16.8.4.1" class="Heading2">Creating UDFs</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="95"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Creating a UDF requires the following information:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Name&#8212;The name of the UDF you are creating and the instance name if applicable.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Dependency&#8212;Specify if the UDF is independent of the UDF definition or is modified by the changers made to it.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Scale&#8212;How to scale the UDF relative to the placement model.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Variable Dimension&#8212;The new values of the variables dimensions and pattern parameters, those whose values can be modified each
+                                    time the UDF is created.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Dimension Display&#8212;Whether to show or blank non-variable dimensions created within the UDF group.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">References&#8212;The geometrical elements that the UDF needs in order to relate the features it contains to the existing models
+                                    features. The elements correspond to the picks that <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts you for when you create a UDF interactively using the prompts defined when the UDF was created. You cannot select
+                                    an embedded datum as the UDF reference.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Parts Intersection&#8212;When a UDF that is being created in an assembly contains features that modify the existing geometry you
+                                    must define which parts are affected or intersected. You also need to know at what level in an assembly each intersection
+                                    is going to be visible.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Orientations&#8212;When a UDF contains a feature with a direction that is defined in respect to a datum plane <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span> must know what direction the new feature will point to. When you create such a UDF interactively <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompt you for this information with a flip arrow.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Quadrants&#8212;When a UDF contains a linearly placed feature that references two datum planes to define it&#8217;s location in the new
+                                    model <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts you to pick the location of the new feature. This is determined by which side of each datum plane the feature must
+                                    lie. This selection is referred to as the quadrant because the are four possible combinations for each linearly place feature.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">To pass all the above values to <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span>, <span class=" x-ph-2-0">Web.Link</span> uses a special class that prepares and sets all the options and passes them to <span class=" x-ph-2-0" id="JFeat_CreatingUDFs-B8943C7E_PTCCreoParametric-E96269BB_18_556"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_CreatingInteractivelyDefinedUDFs-B8944B5C_18_570">
+               
+               <a name="96"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.16.8.5.1" class="Heading2">Creating Interactively Defined UDFs</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="97"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="98"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="99"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFPromptCreateInstructions.Create()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">This static method is used to create an instructions object that can be used to prompt a user for the required values that
+                     will create a UDF interactively.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_CreatingACustomUDF-B89C9213_18_583">
+               
+               <a name="100"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.16.8.6.1" class="Heading2">Creating a Custom UDF</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="101"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.Create()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">This method creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions</span></span> object with a specified name. To set the UDF creation parameters programmatically you must modify this object as described
+                     below. The members of this class relate closely to the prompts <span class=" x-ph-2-0" id="JFeat_CreatingACustomUDF-B89C9213_PTCCreoParametric-E962_18_593"><span xmlns="" profilecode="1">Creo Parametric</span></span> gives you when you create a UDF interactively. PTC recommends that you experiment with creating the UDF interactively using
+                     <span class=" x-ph-2-0" id="JFeat_CreatingACustomUDF-B89C9213_PTCCreoParametric-E962_18_593"><span xmlns="" profilecode="1">Creo Parametric</span></span> before you write the <span class=" x-ph-2-0">Web.Link</span> code to fill the structure.
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheFamilyTableInstanceName-B8956D0F_18_596">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.3.1">Setting the Family Table Instance Name</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Property Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="102"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"> pfcUDFCustomCreateInstructions.InstanceName</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">If the UDF contains a family table, this field can be used to select the instance in the table. If the UDF does not contain
+                        a family table, or if the generic instance is to be selected, the do not set the string.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingDependencyType-B8959307_18_605">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.4.1">Setting Dependency Type</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Property Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="103"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.DependencyType</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFDependencyType</span></span> object represents the dependency type of the UDF. The choices correspond to the choices available when you create a UDF interactively.
+                        This enumerated type takes the following values: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDEP_INDEPENDENT</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDEP_DRIVEN</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-note-2-0 x-note-2-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDEP_INDEPENDENT</span></span> is the default value, if this option is not set.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingScaleAndScaleType-B8965C8A_18_625">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.5.1">Setting Scale and Scale Type</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="104"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.ScaleType</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="105"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.Scale</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The property <span class=" x-parmname-3-0">ScaleType</span> specifies the length units of the UDF in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFScaleType</span></span> object. This enumerated type takes the following values:
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_SAME_SIZE</span></span> </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_SAME_DIMS</span></span> </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_CUSTOM</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_nil</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-note-2-0 x-note-2-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">The default value is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_SAME_SIZE</span></span> if this option is not set.
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">The property<span class=" x-parmname-3-0">Scale</span> specifies the scale factor. If the <span class=" x-parmname-3-0">ScaleType</span> is set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFSCALE_CUSTOM</span></span>, the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Scale</span></span> assigns the user defined scale factor. Otherwise, this attribute is ignored.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheAppearanceOfTheNonUDFDime-B896F45A_18_660">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.6.1">Setting the Appearance of the Non UDF Dimensions</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="106"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.DimDisplayType</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFDimensionDisplayType</span></span> object sets the options in <span class=" x-ph-2-0" id="JFeat_SettingTheAppearanceOfTheNonUDFDime-B896F45A_PTCCr_18_670"><span xmlns="" profilecode="1">Creo Parametric</span></span> for determining the appearance in the model of UDF dimensions and pattern parameters that were not variable in the UDF, and
+                        therefore cannot be modified in the model. This enumerated type takes the following values: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDISPLAY_NORMAL</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDISPLAY_READ_ONLY</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDISPLAY_BLANK</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-note-2-0 x-note-2-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">The default value is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFDISPLAY_NORMAL</span></span> if this option is not set.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheVariableDimensionsAndPara-B89936B9_18_684">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.7.1">Setting the Variable Dimensions and Parameters</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="107"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.VariantValues</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="108"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFVariantDimension.Create()</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="109"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFVariantPatternParam.Create()</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantValues</span></span> class represents an array of variable dimensions and pattern parameters.
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantDimension.Create()</span></span> is a static method creating a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantDimension</span></span>. It accepts the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Name</span>&#8212;The symbol that the dimension had when the UDF was originally defined not the prompt that the UDF uses when it is created
+                                       interactively. To make this name easy to remember, before you define the UDF that you plan to create with the <span class=" x-ph-2-0">Web.Link</span>, you should modify the symbols of all the dimensions that you want to select to be variable. If you get the name wrong, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span> will not recognize the dimension and prompts the user for the value in the usual way does not modify the value. </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">DimensionValue</span>&#8212;The new value.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">If you do not remember the name, you can find it by creating the UDF interactively in a test model, then using the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcFeatureGroup.ListUDFDimensions()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFDimension.UDFDimensionName</span></span> to find out the name.
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantPatternParam.Create()</span></span> is a static method which creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantPatternParam</span></span>. It accepts the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">name</span>&#8212;The string name that the pattern parameter had when the UDF was originally defined </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">number</span>&#8212;The new value.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">After the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFVariantValues</span></span> object has been compiled, use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.VariantValues</span></span> to add the variable dimensions and parameters to the instructions.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheUserDefinedReferences-B8998BEA_18_728">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.8.1">Setting the User Defined References</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods and Properties Introduced: </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="110"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFReference.Create()</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="111"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFReference.IsExternal</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="112"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFReference.ReferenceItem</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="113"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.References</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReference.Create()</span></span> is a static method creating a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReference</span></span> object. It accepts the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">PromptForReference</span>&#8212;The prompt defined for this reference when the UDF was originally set up. It indicates which reference this structure is
+                                       providing. If you get the prompt wrong, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSolid.CreateUDFGroup()</span></span> will not recognize it and prompts the user for the reference in the usual way.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ReferenceItem</span>&#8212;Specifies the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSelection</span></span> object representing the referenced element. You can set <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSelection</span></span> programmatically or prompt the user for a selection separately. You cannot set an embedded datum as the UDF refereence.</span><div class=" x-p-5-0">There are two types of reference:</div>
+                                    <div class=" x-ul-2-0">
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                </td>
+                                                <td><span class=" x-p-4-0">Internal&#8212;The referenced element belongs directly to the model that will contain the UDF. For an assembly, this means that
+                                                      the element belongs to the top level.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                </td>
+                                                <td><span class=" x-p-4-0">External&#8212;The referenced element belongs to an assembly member other than the placement member.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">To set the reference type, use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReference.IsExternal</span></span>.
+                     </div>
+                     <div class=" x-p-7-0">To set the item to be used for reference, use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReference.ReferenceItem</span></span>.
+                     </div>
+                     <div class=" x-p-7-0">After the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReferences</span></span> object has been set, use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.References</span></span> to add the program-defined references.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheAssemblyIntersections-B89A8795_18_771">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.9.1">Setting the Assembly Intersections</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="114"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFAssemblyIntersection.Create()</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="115"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFAssemblyIntersection.InstanceNames</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="116"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.Intersections</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFAssemblyIntersection.Create()</span></span> is a static method creating a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFReference</span></span> object. It accepts the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ComponentPath</span>&#8212;Is an <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">intseq</span></span> type object representing the component path of the part to be intersected.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Visibility level</span>&#8212;The number that corresponds to the visibility level of the intersected part in the assembly. If the number is equal to the
+                                       length of the component path the feature is visible in the part that it intersects. If <span class=" x-parmname-3-0">Visibility level</span> is 0, the feature is visible at the level of the assembly containing the UDF.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFAssemblyIntersection.InstanceNames</span></span> sets an array of names for the new instances of parts created to represent the intersection geometry. This property accepts
+                        the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">instance names</span>&#8212;is a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.cipjava.stringseq</span></span> type object representing the array of new instance names. </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">After the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFAssemblyIntersections</span></span> object has been set, use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.Intersections</span></span> to add the assembly intersections.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingOrientations-B89B18ED_18_807">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.10.1">Setting Orientations</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="117"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.Orientations</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFOrientations</span></span> class represents an array of orientations that provide the answers to <span class=" x-ph-2-0" id="JFeat_SettingOrientations-B89B18ED_PTCCreoParametric-E96_18_817"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts that use a flip arrow. Each term is a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFOrientation</span></span> object that takes the following values:
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFORIENT_INTERACTIVE</span></span>&#8212;Prompt for the orientation using a flip arrow.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFORIENT_NO_FLIP</span></span>&#8212;Accept the default flip orientation.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UDFORIENT_FLIP</span></span>&#8212;Invert the orientation from the default orientation.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The order of orientations should correspond to the order in which <span class=" x-ph-2-0" id="JFeat_SettingOrientations-B89B18ED_PTCCreoParametric-E96_18_817"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts for them when the UDF is created interactively. If you do not provide an orientation that <span class=" x-ph-2-0" id="JFeat_SettingOrientations-B89B18ED_PTCCreoParametric-E96_18_817"><span xmlns="" profilecode="1">Creo Parametric</span></span> needs, it uses the default value <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NO_FLIP</span></span>.
+                     </div>
+                     <div class=" x-p-7-0">After the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFOrientations</span></span> object has been set use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.Orientations</span></span> to add the orientations.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingQuadrants-B89B226D_18_836">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.11.1">Setting Quadrants</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Property Introduced: </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="118"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.Quadrants</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.Quadrants</span></span> sets an array of points, which provide the X, Y, and Z coordinates that correspond to the picks answering the <span class=" x-ph-2-0" id="JFeat_SettingQuadrants-B89B226D_PTCCreoParametric-E96269_18_846"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts for the feature positions. The order of quadrants should correspond to the order in which <span class=" x-ph-2-0" id="JFeat_SettingQuadrants-B89B226D_PTCCreoParametric-E96269_18_846"><span xmlns="" profilecode="1">Creo Parametric</span></span> prompts for them when the UDF is created interactively.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_SettingTheExternalReferences-B89C838C_18_848">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.12.1">Setting the External References</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Property Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="119"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">pfcUDFCustomCreateInstructions.ExtReferences</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCustomCreateInstructions.ExtReferences</span></span> sets an external reference assembly to be used when placing the UDF. This will be required when placing the UDF in the component
+                        using references outside of that component. References could be to the top level assembly of another component.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JFeat_ExampleCode-B89BC3F3_18_858">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.16.8.6.13.1">Example Code 1</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUDFCreateExamples.js</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_weblink_loadpoint&gt;/weblinkexamples/jscript</span></span>  copies of a node UDF at a particular coordinate system location in a part. The node UDF is a spherical cut centered at the
+                        coordinate system whose diameter is driven by the 'diam' argument to the method..
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
